@@ -1,0 +1,9 @@
+.env
+.cache/
+sessions/
+logs/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+chroma/

@@ -1,0 +1,63 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram name="Page-1" id="gLUCh_yKF_rRovyX37dH">
+    <mxGraphModel dx="1426" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RxpsjpfeVFoTC04TV3Kh-15" edge="1" parent="1" source="RxpsjpfeVFoTC04TV3Kh-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="RxpsjpfeVFoTC04TV3Kh-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RxpsjpfeVFoTC04TV3Kh-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Converstation" vertex="1">
+          <mxGeometry height="80" width="120" x="460" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="RxpsjpfeVFoTC04TV3Kh-3" parent="1" style="whiteSpace=wrap;html=1;" value="User&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="RxpsjpfeVFoTC04TV3Kh-6" edge="1" parent="1" source="RxpsjpfeVFoTC04TV3Kh-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="910" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RxpsjpfeVFoTC04TV3Kh-5" parent="1" style="whiteSpace=wrap;html=1;" value="Ollama" vertex="1">
+          <mxGeometry height="60" width="120" x="1010" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="RxpsjpfeVFoTC04TV3Kh-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="ollama-client" vertex="1">
+          <mxGeometry height="80" width="120" x="780" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="RxpsjpfeVFoTC04TV3Kh-9" edge="1" parent="1" source="RxpsjpfeVFoTC04TV3Kh-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RxpsjpfeVFoTC04TV3Kh-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;u&gt;ollama_client.py&lt;/u&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;chat()&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;&lt;b&gt;1. Defines ollama API&lt;/b&gt;&lt;/i&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;i&gt;&lt;b&gt;2. Defines Agent communication with model&lt;/b&gt;&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;i&gt;&lt;b&gt;3. Parses the json response and returns to the user&lt;/b&gt;&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;i&gt;&lt;b&gt;Stream()&lt;/b&gt;&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;i&gt;&lt;b&gt;1. parses the output in chunks&lt;/b&gt;&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="205" x="755" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="RxpsjpfeVFoTC04TV3Kh-12" edge="1" parent="1" source="RxpsjpfeVFoTC04TV3Kh-2" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;curved=1;" target="RxpsjpfeVFoTC04TV3Kh-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="200" />
+            </Array>
+            <mxPoint x="550" y="240" as="sourcePoint" />
+            <mxPoint x="600" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RxpsjpfeVFoTC04TV3Kh-13" edge="1" parent="1" source="RxpsjpfeVFoTC04TV3Kh-3" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.625;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;curved=0;entryPerimeter=0;" target="RxpsjpfeVFoTC04TV3Kh-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="310" />
+              <mxPoint x="400" y="310" />
+            </Array>
+            <mxPoint x="220" y="340" as="sourcePoint" />
+            <mxPoint x="500" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RxpsjpfeVFoTC04TV3Kh-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;u&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Conversation.py&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;&lt;b&gt;Handles conversation history&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Assigns role to the LLM&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Keep the token count&lt;/b&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="260" x="390" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="RxpsjpfeVFoTC04TV3Kh-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=-15;" value="POST /api" vertex="1">
+          <mxGeometry height="30" width="60" x="580" y="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
