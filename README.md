@@ -1,13 +1,12 @@
 # 🔐 Cybersecurity Research Assistant
 
-A personal learning project to master the core structure of AI agents —  building a cybersecurity focused research assistant from scratch, 
+A personal learning project to master the core structure of AI agents, building a security focused research assistant from scratch, 
 deliberately avoiding frameworks first to understand what's happening under the hood.
 
 ## Motivation
 
-Most AI agent tutorials start with LangChain or similar frameworks. 
-This project takes the opposite approach — build everything manually first, 
-understand the fundamentals, then layer in frameworks intentionally.
+Most AI agent tutorials start with LangChain or similar frameworks but this project build everything manually first, 
+understand the fundamentals, then layer in frameworks at a later stage.
 
 ## Current Status
 
