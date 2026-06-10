@@ -1,6 +1,6 @@
 .env
 .cache/
-sessions/
+session/
 logs/
 __pycache__/
 *.pyc
