@@ -2,16 +2,19 @@ from config import OLLAMA_BASE_URL , MODEL_NAME
 import requests
 import json
 import time
+from src.tools.registry import TOOLS
+from typing import Union
 
 
 API_chat_URL = OLLAMA_BASE_URL + "/api/chat"
 
 
-def chat(messages:list) -> str:
+def chat(messages:list) -> Union[str, dict]:
     request_body = {
         "model": MODEL_NAME,
         "messages" : messages,
-        "stream" : False
+        "stream" : False,
+        "tools" : TOOLS
     }
 
     try:
@@ -21,7 +24,10 @@ def chat(messages:list) -> str:
         print('Ollama is not running. Please start with: ollama serve')
         return
     
-    return req.json()['message']['content']
+    if( "tool_calls" in req.json()['message'] and req.json()['message']["tool_calls"]):
+        return req.json()['message']
+    else:    
+        return req.json()['message']['content']
 
 """
 Stream provides output one by by using yield, so we dont have to wait for complete respononse but see it in real time
@@ -31,7 +37,8 @@ def stream_chat(messages:list) ->str:
     request_body = {
         "model": MODEL_NAME,
         "messages" : messages,
-        "stream" : True
+        "stream" : True,
+        "tools" : TOOLS
     }
     
     try:
@@ -42,12 +49,25 @@ def stream_chat(messages:list) ->str:
         return
 
     for lines in req.iter_lines():
-        parsed = json.loads(lines)
-        content = parsed['message']['content']
-        if parsed["done"]:
-            break
-        else:
+        
+        if lines:
+            parsed = json.loads(lines)
+        
+        message = parsed.get("message", {})
+        
+        # if tool call detected, yield it as special marker and stop
+        if "tool_calls" in message and message["tool_calls"]:
+            yield {"tool_calls": message["tool_calls"]}
+            return
+            
+        # returns normal chunks
+        content = message.get("content", "")
+        if content:
             yield content
+            
+        if parsed.get("done"):
+            break
+        
 
 def check_ollama(): #Provides a helpful msg to the user if Ollama is not running
     try:

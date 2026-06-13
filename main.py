@@ -100,5 +100,9 @@ def show_splash():
     ))
 
 if __name__ == "__main__":
+    
+    # from src.tools.tool_dispatcher import dispatch
+    # result = dispatch("echo_tool", {"message": "hello world"})
+    # print(result)
     conversation()
 

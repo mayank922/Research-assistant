@@ -10,7 +10,8 @@ understand the fundamentals, then layer in frameworks at a later stage.
 
 ## Current Status
 
-🚧 **Phase 1 in progress** — Raw LLM chat with conversation history
+🚧 **Phase 1** — Raw LLM chat with conversation history
+🚧 **Phase 2 in progress** — Function Calling/ Tools
 
 ## Installation
 
